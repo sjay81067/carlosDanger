@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  dot_name: MyString
+  t_group: MyString
+  t_review1: MyText
+  t_review2: 
+  t_review3: MyText
+  t_review4: MyText
+  p_group: MyString
+  p_review1: MyText
+  p_review2: MyText
+  p_review3: MyText
+  p_review4: MyText
+
+two:
+  name: MyString
+  dot_name: MyString
+  t_group: MyString
+  t_review1: MyText
+  t_review2: 
+  t_review3: MyText
+  t_review4: MyText
+  p_group: MyString
+  p_review1: MyText
+  p_review2: MyText
+  p_review3: MyText
+  p_review4: MyText

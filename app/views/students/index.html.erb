@@ -1,0 +1,66 @@
+<h1>Listing students</h1>
+
+
+
+<% @students.each do |student| %>
+<table border="1">
+  <tr>
+    <tr>
+    <th>Name</th>
+    <th>Dot name</th>
+  </tr>
+    <td><%= student.name %></td>
+    <td><%= student.dot_name %></td>
+  <tr>  
+    <th>T group</th>
+    <td><%= student.t_group %></td>
+  </tr> 
+  <tr>
+  	<th>T review1</th>
+    <td><%= student.t_review1 %></td>
+  </tr>  
+  <tr>
+  	<th>T review2</th>
+    <td><%= student.t_review2 %></td>
+  </tr> 
+    <tr>
+  	<th>T review3</th>
+    <td><%= student.t_review3 %></td>
+  </tr> 
+    <tr>
+  	<th>T review4</th>
+    <td><%= student.t_review4 %></td>
+  </tr> 
+ 
+  <tr>  
+    <th>P group</th>
+    <td><%= student.p_group %></td>
+  </tr> 
+  <tr>
+  	<th>P review1</th>
+    <td><%= student.p_review1 %></td>
+  </tr>  
+  <tr>
+  	<th>P review2</th>
+    <td><%= student.p_review2 %></td>
+  </tr> 
+    <tr>
+  	<th>P review3</th>
+    <td><%= student.p_review3 %></td>
+  </tr> 
+    <tr>
+  	<th>P review4</th>
+    <td><%= student.p_review4 %></td>
+  </tr>  
+</table>
+
+    <td><%= link_to 'Show', student %></td>
+    <td><%= link_to 'Edit', edit_student_path(student) %></td>
+    <td><%= link_to 'Destroy', student, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+
+
+<br />
+
+<%= link_to 'New Student', new_student_path %>

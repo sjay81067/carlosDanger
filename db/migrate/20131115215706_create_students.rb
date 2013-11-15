@@ -1,0 +1,20 @@
+class CreateStudents < ActiveRecord::Migration
+  def change
+    create_table :students do |t|
+      t.string :name
+      t.string :dot_name
+      t.string :t_group
+      t.text :t_review1
+      t.text :t_review2
+      t.text :t_review3
+      t.text :t_review4
+      t.string :p_group
+      t.text :p_review1
+      t.text :p_review2
+      t.text :p_review3
+      t.text :p_review4
+
+      t.timestamps
+    end
+  end
+end
